@@ -1,0 +1,108 @@
+@import '_ns';
+@import '_fontcolor';
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+.header {
+    background: url('../images/headerbg.jpg') no-repeat center top / cover;
+    padding-bottom: 30px;
+    padding-top: 44px;
+    a {
+        color: #FFFFFF;
+    }
+    .menu {
+        display: flex;
+        &__item {
+            margin-right: 64px;
+            @extend %sr;
+            font-size: 16px;
+            line-height: 25px;
+            padding: 0;
+            &:last-child {
+                margin-right: 50px;
+            }
+        }
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        margin-bottom: 156px;
+        .logo {
+            margin-right: 584px;
+        }
+    }
+    .hedcont {
+        color: #FFFFFF;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+        &__title {
+            max-width: 888px;
+            margin: 0 auto;
+            @extend %sb;
+            font-size: 64px;
+            text-transform: capitalize;
+            line-height: 120%;
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            width: 627px;
+            @extend %sr;
+            margin: 0 auto;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.01em;
+            margin-bottom: 65px;
+        }
+        &__btn {
+            @extend %sb;
+            display: inline-block;
+            font-size: 20px;
+            padding: 16px 80px;
+            border-radius: 10px;
+            letter-spacing: 0.01em;
+            line-height: 150%;
+            background-color: rgba(226, 226, 226, 0.4);
+            backdrop-filter: blur(30px);
+            border-radius: 10px;
+            margin-bottom: 194px;
+        }
+    }
+    .info {
+        background-color: #286F6C;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px;
+        color: white;
+        padding-left: 111px;
+        padding-right: 111px;
+        &-colum {
+            width: 112px;
+            padding: 38px 0;
+            &__title {
+                text-align: center;
+                @extend %sb;
+                font-size: 40px;
+                margin-bottom: 5px;
+                line-height: 120%;
+            }
+            &__subtitle {
+                @extend %sr;
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 0.01em;
+                line-height: 130%;
+            }
+        }
+    }
+    .line {
+        display: block;
+        width: 100px;
+        border: 1px solid #FFFFFF;
+        transform: rotate(90deg);
+    }
+}

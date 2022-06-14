@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 .header {
-    background: url('../images/headerbg.jpg') no-repeat center top / cover;
+    background: url('../images/headerbg.jpg') no-repeat center -167px / cover;
     padding-bottom: 30px;
     padding-top: 44px;
     a {
@@ -67,7 +67,7 @@
             background-color: rgba(226, 226, 226, 0.4);
             backdrop-filter: blur(30px);
             border-radius: 10px;
-            margin-bottom: 194px;
+            margin-bottom: 244px;
         }
     }
     .info {
@@ -104,5 +104,125 @@
         width: 100px;
         border: 1px solid #FFFFFF;
         transform: rotate(90deg);
+    }
+}
+.about {
+    padding-top: 74px;
+    color: #23262F;
+    padding-bottom: 74px;
+    &-block {
+        &__img {
+            margin-right: 100px;
+            float: left;
+        }
+        &-up {
+            &__title {
+                @extend %sb;
+                line-height: 130%;
+                font-size: 40px;
+                text-transform: capitalize;
+                margin-bottom: 14px;
+            }
+            &__subtitle {
+                @extend %sr;
+                line-height: 170%;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+        }
+        &-down {
+            max-height: 120px;
+            &__title {
+                @extend %sb;
+                line-height: 28px;
+                font-size: 20px;
+                margin-bottom: 8px;
+            }
+            &__subtitle {
+                @extend %sr;
+                line-height: 28px;
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+            &::before {
+                position: relative; 
+                left: -50px;
+                top: 30px;
+                content: url("../images/chechlist.svg")
+            }
+        }
+    }
+}
+.bestfurniture {
+    color: #23262F;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+    padding-bottom: 96px;
+    &-text {
+        padding-right: 116px;
+        float: left;
+        &__title {
+            padding-top: 41px;
+            padding-bottom: 35px;
+            width: 558px;
+            @extend %sb;
+            line-height: 130%;
+            font-size: 40px;
+            text-transform: capitalize;
+        }
+        &__subtitle {
+            width: 570px;
+            @extend %sr;
+            font-size: 20px;
+            line-height: 170%;
+        }
+    }
+}
+.testimonial {
+    color: #23262F;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    .block {
+        float: left;
+        padding-right: 33px;
+        &__title {
+            width: 645px;
+            font-size: 40px;
+            @extend %sb;
+            line-height: 130%;
+            text-transform: capitalize;
+        }
+        &-user {
+            padding-left: 100px;
+            padding-bottom: 44px;
+            &__title {
+                width: 102px;
+                @extend %sb;
+                font-size: 20px;
+                line-height: 100%;
+                margin-bottom: 12px;
+            }
+            &__subtitle {
+                width: 210px;
+                @extend %sr;
+                font-size: 14px;
+                line-height: 100%;
+            }
+            &::before {
+                position: relative;
+                top: 60px;
+                right: 100px;
+                content: url("../images/user.png")
+            }
+            
+        }
+        &__subtitle {
+            width: 570px;
+            @extend %sr;
+            font-size: 20px;
+            line-height: 170%;
+        }
     }
 }
